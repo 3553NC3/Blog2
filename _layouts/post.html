@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="wrapper">
+  <div href="{{ page.url }}" class="post">
+    <div class="overlay-section title">
+      <a href="/" class="previous"></a>
+      <p class="text">{{ page.title }}</p>
+      <p class="date">{{ page.date | date: "%B %-d, %Y" }}</p>
+    </div>
+    <div class="overlay-section">
+      {{ content }}
+    </div>
+  </div>
+</div>
